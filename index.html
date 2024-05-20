@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-UX-compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale==1.0">
+        <title>Benita's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/5331338e88.js" crossorigin="anonymous"></script>
+    </head>
+        <body> 
+            <div id="header">
+                <div class="container">
+                    <nav>
+                        <img src="Benita's Portfolio/Images/Logo.png " class="Logo">
+                        <ul id="sidemenu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="About.html">About</a></li>
+                            <li><a href="Services.html">Services</a></li>
+                            <li><a href="Portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <i class="fa-regular fa-circle" onclick="closemenu()"></i>
+                        </ul>
+                        <i class="fa-solid fa-bars" onclick="openmenu"></i>
+                    </nav>
+                    <div class="header-text">
+                        <p>Cartoonist</p>
+                        <h1>Hi! I'm <span>Benita</span><br>Awodeyi from Nigeria</h1>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                var sidemenu = document.getElementById=("sidemenu")
+
+                function openmenu(){
+                    sidemenu.style.right = "0";
+                 }
+                 function closemenu(){
+                    sidemenu.style.right = "-200px";
+                 }
+            </script>
+           
+        </body>
+    </html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-UX-compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale==1.0">
+        <title>Benita's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/5331338e88.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <img src="Benita's Portfolio/Images/Logo.png " class="Logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    <!-- about -->          
+    <div id="About"> 
+        <div class="row">
+            <div class="About-col-1">
+                 <img src="Benita's Portfolio/Images/neetah.jpg">
+            </div>
+            <div class="About-col-2">
+             <h1 class="sub-title">About me</h1> 
+             <p>I am Benita Awodeyi, I am a Cartoonist, UI/UX designer and an architect. I am currently a student in Pan Atlantic University. I have worked with several multimedia companies like Pixar, Marvel, Nickelodeon, and Disney. I will be glad to work with you as your experienced UX/UI designer.</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>    
+            <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li><span>UI/UX<span><br>Web interfaces</li>
+                    <li><span>Web developement</span><br>Web/app developement</li>
+                    <li><span>App developement</span><br>Buiding androids/ios apps</li>
+                    <li><span>Cartoonist</span><br>Series and movie animation</li>
+                </ul>
+            </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2012-2014</span><br>Animation for pixar</li>
+                            <li><span>2014-2018</span><br>Animation of Disney cartoon T.O.T.S </li>
+                            <li><span>2020-2022</span><br>Design of Figma app for Apple</li>
+                            <li><span>2022-2024</span><br>Encanto animation for disney</li>
+                        </ul>
+                    </div>
+                        <div class="tab-content\" id="Education">
+                <ul>
+                    <li><span>2024</span><br>Pan Atlantic University</li>
+                    <li><span>2018</span><br>Emmy Norberton high school</li>
+                    <li><span>2020</span><br>Hilltop land mark</li>
+                    <li><span>2016</span><br>Grand Academia</li>
+                </ul>
+                        </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+        function opentab (tabname){
+             for(tablink of tablinks){
+                  tablink.classList.remove("active-link");
+             }
+             for(tabcontent of tabcontents){
+                  tabcontent.classList.remove("active-tab");
+             }
+             event.currentTarget.classList.add("active-link");
+             document.getElementById(tabname).classList.add("active-tab");
+            }
+
+
+    </script>
+    </body>
+</html>
